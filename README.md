@@ -19,14 +19,16 @@ Quick-find는 매우 느리다.
 |:---:|:---:|:---:|:---:|
 |quick-find|N|N|1|
 N개의 객체에 N개의 Union 명령을 실행하는데 N^2(quadratic)의 시간이 든다. 
+
 #### 3. quick union
 
 트리 형태로 구성해 root를 만든다. 연결되어 있으면 같은 root를 가르키는 형태.
 
 |algorithm|initialize|union|find|
 |:---:|:---:|:---:|:---:|
-|quick-find	|N	|N	|1|
-|quick-union|	N|	N|	N|
+|quick-find	|N|N|1|
+|quick-union|N|N|N|
+
 Quick-union 또한 느리다. 
 
 **Quick-find의 결함**
@@ -54,30 +56,35 @@ Weighted quick-union
 
 #### 1. introduction
 Algorithm을 비교하는 방법
-Scientific method
-	Observation
+
+- Scientific method
+    -  Observation
 
 #### 2. observations
 Experimental algorithmics
-Good. Easier and cheaper than other sciences.
-Bad. Difficult to get precise measurement.
+
+**Good.** Easier and cheaper than other sciences.
+
+**Bad.** Difficult to get precise measurement.
+
 #### 3. mathematical models
 Alan Turing이 말하길 가장 큰 연산만 고려하면 된다고 하였다.
 #### 4. order-of-growth classifications
 ![](https://4.bp.blogspot.com/-lSgfMcSfxPk/VfBecnA7ntI/AAAAAAAAATI/ozjV6p9vuHo/s1600/orderofgrowth.png)
 #### 5. theory of algorithms
-Best case. Lower bound on cost.
+**Best case.** Lower bound on cost.
 
-Worst case. Upper bound on cost.
+**Worst case.** Upper bound on cost.
 
-Average case. “Expected” cost.
+**Average case.** “Expected” cost.
 
-|notation|	provides|	example|	used to|
+|notation|provides|example|used to|
 |:---:|:---:|:---:|:---:|
-|Tilde|	leading term|	~$10N^2$	|provide approximate model|
-|Big Theta	|asymptotic order of growth|	$\Theta(N^2)$|	classify algorithms|
-|Big Oh|	$\Theta(N^2)$ and smaller|	$O(N^2)$|	develop upper bounds|
-|Big Omega|	$\Theta(N^2)$ and larger|	$\Omega(N^2)$	|develop lower bounds|
+|Tilde|	leading term|~$10N^2$|provide approximate model|
+|Big Theta	|asymptotic order of growth|$\Theta(N^2)$|classify algorithms|
+|Big Oh|$\Theta(N^2)$ and smaller|$O(N^2)$|develop upper bounds|
+|Big Omega|$\Theta(N^2)$ and larger|$\Omega(N^2)$|develop lower bounds|
+
 #### 6. memory
 Total memory usage for a data type value:
 - Primitive type: 4 bytes for int, 8 bytes for double, …
