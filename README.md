@@ -18,6 +18,7 @@ Quick-find는 매우 느리다.
 |algorithm|initialize|union|find|
 |:---:|:---:|:---:|:---:|
 |quick-find|N|N|1|
+
 N개의 객체에 N개의 Union 명령을 실행하는데 N^2(quadratic)의 시간이 든다. 
 
 #### 3. quick union
